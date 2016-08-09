@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>AspNetUserMaintenanceAzureSiteExtension</id>
+    <title>ASP.NET User Maintenance Azure Site Extension</title>
+    <version>0.0.1</version>
+    <authors>Aaron Hoffman</authors>
+    <licenseUrl>https://raw.githubusercontent.com/Stonefinch/AspNetUserMaintenanceAzureSiteExtension/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Stonefinch/AspNetUserMaintenanceAzureSiteExtension</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Site Extension to perform maintenance on ASP.NET User Authentication, Authorization, and Membership.</description>
+    <iconUrl>https://raw.githubusercontent.com/Stonefinch/AspNetUserMaintenanceAzureSiteExtension/master/AspNetUserMaintenanceAzureSiteExtensionIcon_48x48.png</iconUrl>
+    <tags>user membership authentication authorization identity maintenance management</tags>
+  </metadata>
+  <files>
+    <file src="artifacts\Release\SiteExtensions\AspNetUserMaintenanceAzureSiteExtension\**\*.*" target="content" />
+  </files>
+</package>
