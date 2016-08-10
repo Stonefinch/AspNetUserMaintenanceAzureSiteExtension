@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Create User";
+}
+<h2>Create User (@Html.ActionLink("back to list", "ListUsers"))</h2>
+<br />
+@if(ViewBag.Errors != null)
+{
+    <ul>
+        @foreach(var error in ViewBag.Errors)
+        {
+            <li>@error</li>
+        }
+    </ul>
+}
+<br />
+<form method="post" >
+    <input type="text" class="form-control" id="u" name="u" placeholder="UserName (required)" value="@ViewBag.UserName" required >
+    <input type="text" class="form-control" id="e" name="e" placeholder="Email (required)" value="@ViewBag.Email" required >
+    <input type="text" class="form-control" id="p" name="p" placeholder="Password (required)" value="@ViewBag.Password" required >
+    <input type="text" class="form-control" id="r" name="r" placeholder="Roles (space separated) (not required)" value="@ViewBag.Roles" >
+    <br />
+    <button type="submit" class="btn btn-default">Create User</button>
+</form>

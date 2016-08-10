@@ -1,15 +1,21 @@
 ﻿@{
     ViewBag.Title = "Home";
 }
-
 <div class="row">
-
+    <h3>Welcome!</h3>
+    <p>Welcome to the <a href="https://github.com/Stonefinch/AspNetUserMaintenanceAzureSiteExtension">ASP.NET User Maintenance Azure Site Extension!</a></p>
+    <p>This extension uses the ASPNETAUTHCONNECTIONSTRING environment variable to connect to your <a href="http://johnatten.com/2014/04/20/asp-net-mvc-and-identity-2-0-understanding-the-basics/">ASP.NET Identity 2.0</a> SQL Instance. Please set this value by creating a new connection string in the Application Settings blade of your website in the azure portal with the same name.</p>
+    <br />
     <h3>Actions</h3>
     <ul>
         <li>@Html.ActionLink("List Users", "ListUsers")</li>
-        <li>@Html.ActionLink("Add User", "AddUser")</li>
-        <li>@Html.ActionLink("Add Role", "AddRole")</li>
-        <li>@Html.ActionLink("Bulk Add Users", "BulkAdd")</li>
+        <li>@Html.ActionLink("Create User", "CreateUser")</li>
+        <li>@Html.ActionLink("Create Role", "CreateRole")</li>
+        <li>@Html.ActionLink("Bulk Create Users", "BulkCreate")</li>
     </ul>
-
+    <br />
+    <h3>Notes</h3>
+    <ul>
+        <li><a href="https://github.com/Stonefinch/AspNetUserMaintenanceAzureSiteExtension/issues">Request new features here</a></li>
+    </ul>
 </div>
