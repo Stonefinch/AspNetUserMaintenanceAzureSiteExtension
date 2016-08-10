@@ -13,6 +13,6 @@
     <tags>user membership authentication authorization identity maintenance management</tags>
   </metadata>
   <files>
-    <file src="artifacts\Release\SiteExtensions\AspNetUserMaintenanceAzureSiteExtension\**\*.*" target="content" />
+    <file src="artifacts\**\*.*" target="content" />
   </files>
 </package>
