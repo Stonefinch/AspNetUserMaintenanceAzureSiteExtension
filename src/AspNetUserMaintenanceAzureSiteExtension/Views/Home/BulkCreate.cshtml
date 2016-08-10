@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Bulk Create";
+}
+
+<h2>Bulk Create (@Html.ActionLink("back to list", "ListUsers"))</h2>
+<p><a href="https://raw.githubusercontent.com/Stonefinch/AspNetUserMaintenanceAzureSiteExtension/master/ExampleBulkCreateCsv.txt">Example CSV</a></p>
+<p>format: (note: roles are space separated)</p>
+<p>username,email,password[,role(s)]</p>
+<br />
+@if (ViewBag.Errors != null)
+{
+    <ul>
+        @foreach (var error in ViewBag.Errors)
+        {
+            <li>@error</li>
+        }
+    </ul>
+}
+<br />
+<form method="post">
+    <textarea style="width: 600px; height: 600px;" id="csv" name="csv">@ViewBag.Csv</textarea>
+    <br />
+    <button type="submit" class="btn btn-default">Bulk Create</button>
+</form>
