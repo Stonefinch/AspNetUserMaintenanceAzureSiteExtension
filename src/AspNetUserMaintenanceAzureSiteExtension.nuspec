@@ -10,7 +10,10 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Site Extension to perform maintenance on ASP.NET User Authentication, Authorization, and Membership.</description>
     <iconUrl>https://raw.githubusercontent.com/Stonefinch/AspNetUserMaintenanceAzureSiteExtension/master/AspNetUserMaintenanceAzureSiteExtensionIcon_48x48.png</iconUrl>
-    <tags>user membership authentication authorization identity maintenance management</tags>
+    <tags>AzureSiteExtension user membership authentication authorization identity maintenance management</tags>
+    <packageTypes>
+      <packageType name="AzureSiteExtension" />
+    </packageTypes>
   </metadata>
   <files>
     <file src="artifacts\**\*.*" target="content" />
